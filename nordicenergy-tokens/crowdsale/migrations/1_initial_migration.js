@@ -3,13 +3,13 @@ const crowdsale = artifacts.require('../contracts/NETCrowdsale.sol')
 const setDefaultAccount = require('../scripts/setDefaultAccount.js')
 
 module.exports = function(deployer, network, accounts) {
-    const rate = new web3.BigNumber(25000)
-    const wallet = '0x2202Ec7e2A1357887e67744dD6C49a66e75DA5e3'
-    const openingTime = (new Date('01.01.2021')).getTime/1000
-    const closingTime = (new Date('31.03.2021')).getTime/1000
+    const rate = new web3.BigNumber(50000)
+    const wallet = '0x99738A8c762774e8A26044C8487C71e0c38C180f'
+    const openingTime = (new Date('01.11.2020')).getTime/1000
+    const closingTime = (new Date('31.05.2021')).getTime/1000
     const goal = 100000000
-    const initialRate = 500
-    const finalRate = 20000
+    const initialRate = 50000
+    const finalRate = 25000
     const cap = 650000000
     // Setup default account
     setDefaultAccount(web3)
